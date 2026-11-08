@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#f1f5f9"/>
+  <rect x="80" y="80" width="440" height="240" fill="#e2e8f0" rx="12"/>
+  <rect x="120" y="140" width="120" height="40" fill="#cbd5e1" rx="6"/>
+  <rect x="120" y="200" width="200" height="40" fill="#cbd5e1" rx="6"/>
+  <rect x="380" y="140" width="140" height="40" fill="#cbd5e1" rx="6"/>
+  <text x="300" y="330" font-family="Arial" font-size="16" fill="#64748b" text-anchor="middle">Günlük finans ekranı</text>
+</svg>

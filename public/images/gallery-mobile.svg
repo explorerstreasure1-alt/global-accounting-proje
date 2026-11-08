@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#f1f5f9"/>
+  <rect x="60" y="60" width="180" height="280" fill="#e2e8f0" rx="12"/>
+  <rect x="280" y="60" width="260" height="280" fill="#e2e8f0" rx="12"/>
+  <rect x="100" y="120" width="100" height="40" fill="#cbd5e1" rx="6"/>
+  <rect x="100" y="180" width="100" height="40" fill="#cbd5e1" rx="6"/>
+  <rect x="320" y="120" width="180" height="40" fill="#cbd5e1" rx="6"/>
+  <rect x="320" y="180" width="180" height="40" fill="#cbd5e1" rx="6"/>
+  <text x="300" y="360" font-family="Arial" font-size="16" fill="#64748b" text-anchor="middle">Cebinizdeki işletme defteri</text>
+</svg>
