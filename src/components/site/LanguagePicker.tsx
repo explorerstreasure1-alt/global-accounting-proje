@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { Icon } from "./icons";
 import { LOCALES, LOCALE_COOKIE, WELCOME_EN, t, type Locale } from "@/lib/locales";
@@ -119,15 +119,17 @@ export function LanguageWelcome({ current, show }: { current: Locale; show: bool
 export function LanguageSwitcher({ current, compact = false }: { current: Locale; compact?: boolean }) {
   const router = useRouter();
   const [, startTransition] = useTransition();
+  const detailsRef = useRef<HTMLDetailsElement>(null);
   const info = LOCALES.find((l) => l.code === current) ?? LOCALES[0];
 
   const change = (locale: Locale) => {
     persist(locale);
+    detailsRef.current?.removeAttribute("open");
     startTransition(() => router.refresh());
   };
 
   return (
-    <details className="group relative">
+    <details ref={detailsRef} className="group relative">
       <summary
         className={`flex cursor-pointer items-center gap-1.5 rounded-xl border border-black/[0.08] bg-white text-[0.78rem] font-medium text-ink/75 transition hover:bg-black/[0.03] ${
           compact ? "h-10 px-2" : "h-10 px-3"
