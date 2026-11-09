@@ -111,16 +111,13 @@ export function defaultFaqsFor(locale: Locale) {
 }
 
 const VIDEO_FILES_BY_LOCALE: Record<Locale, { videoUrl: string; thumbnailUrl: string } | null> = {
-  tr: {
-    videoUrl: "/videos/app-demo.mp4",
-    thumbnailUrl: "/images/gallery-mobile.jpg",
-  },
+  tr: null,
   en: {
-    videoUrl: "/videos/global-accounting-en.mp4",
+    videoUrl: "https://youtu.be/DuHFgkHezWo",
     thumbnailUrl: "/images/gallery-dashboard.jpg",
   },
   de: {
-    videoUrl: "/videos/global-accounting-de.mp4",
+    videoUrl: "https://youtu.be/Bt3HbtIyGKY",
     thumbnailUrl: "/images/gallery-dashboard.jpg",
   },
   ru: null,
