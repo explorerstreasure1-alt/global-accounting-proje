@@ -110,23 +110,25 @@ export function defaultFaqsFor(locale: Locale) {
   }));
 }
 
+const EN_VIDEO = {
+  videoUrl: "https://youtu.be/DuHFgkHezWo",
+  thumbnailUrl: "/images/gallery-dashboard.jpg",
+};
+
 const VIDEO_FILES_BY_LOCALE: Record<Locale, { videoUrl: string; thumbnailUrl: string } | null> = {
-  tr: null,
-  en: {
-    videoUrl: "https://youtu.be/DuHFgkHezWo",
-    thumbnailUrl: "/images/gallery-dashboard.jpg",
-  },
+  tr: EN_VIDEO,
+  en: EN_VIDEO,
   de: {
     videoUrl: "https://youtu.be/Bt3HbtIyGKY",
     thumbnailUrl: "/images/gallery-dashboard.jpg",
   },
-  ru: null,
-  fr: null,
-  es: null,
-  ar: null,
-  fa: null,
-  he: null,
-  ku: null,
+  ru: EN_VIDEO,
+  fr: EN_VIDEO,
+  es: EN_VIDEO,
+  ar: EN_VIDEO,
+  fa: EN_VIDEO,
+  he: EN_VIDEO,
+  ku: EN_VIDEO,
 };
 
 /** Dil bazlı örnek videolar — her dil kendi videosunu gösterir; diğer diller boş başlar. */
